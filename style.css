@@ -866,6 +866,7 @@ nav {
 .info-content p {
     font-size: 16px;
     font-weight: 500;
+    word-break: break-all;
 }
 
 /* Reassuring callout box (Replacing flashy emergency warning) */
@@ -1071,6 +1072,12 @@ footer {
     line-height: 1.5;
 }
 
+.footer-contact-list a {
+    color: inherit;
+    text-decoration: none;
+    word-break: break-all;
+}
+
 .footer-contact-list svg {
     width: 16px;
     height: 16px;
@@ -1096,7 +1103,8 @@ footer {
 
 .footer-legal-links {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 12px 24px;
 }
 
 .footer-legal-links a {
@@ -1187,6 +1195,15 @@ footer {
     
     header.scrolled {
         top: 8px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .info-card {
+        padding: 20px 16px;
+        gap: 16px;
     }
 
     .mobile-nav {
