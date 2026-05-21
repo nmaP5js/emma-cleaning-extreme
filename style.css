@@ -33,6 +33,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
@@ -853,6 +854,11 @@ nav {
     stroke-width: 1.5;
 }
 
+.info-content {
+    min-width: 0;
+    flex: 1;
+}
+
 .info-content span {
     font-size: 11px;
     color: var(--text-muted);
@@ -886,6 +892,11 @@ nav {
     color: var(--text-muted);
     flex-shrink: 0;
     margin-top: 2px;
+}
+
+.emergency-notice-content {
+    min-width: 0;
+    flex: 1;
 }
 
 .emergency-notice-content h4 {
@@ -1076,6 +1087,7 @@ footer {
     color: inherit;
     text-decoration: none;
     word-break: break-all;
+    min-width: 0;
 }
 
 .footer-contact-list svg {
@@ -1204,6 +1216,12 @@ footer {
     .info-card {
         padding: 20px 16px;
         gap: 16px;
+    }
+
+    .hero-highlights {
+        flex-wrap: wrap;
+        gap: 16px 24px;
+        justify-content: center;
     }
 
     .mobile-nav {
